@@ -1,6 +1,7 @@
 package com.shravanee.crud_practice.controller;
 
 import com.shravanee.crud_practice.model.Student;
+import com.shravanee.crud_practice.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,4 +26,4 @@ public class ControllerEmp
         @DeleteMapping("/{id}")
         public void delete(@PathVariable Long id) { service.delete(id); }
     }
-}
+
